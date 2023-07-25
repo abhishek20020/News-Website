@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="icon" href="./Khabar1.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="./Khabar1.png" class="logo" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="Sports" onclick="onNavItemClick('Sports')">Sports</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+                    <li class="hover-link nav-item" id="education" onclick="onNavItemClick('education')">Education</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+    
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque totam ipsa reiciendis facere est facilis sint tenetur voluptatem officiis labore?</p>
+            </div>
+        </div>
+    </template>
+    <!--Sub-footer-->
+    
+    <div class="subfooter">
+        <div class="container flex subfooter-container">
+            <a  class="hover-link" href="#">Pricing policy</a>
+            <a  class="hover-link" href="#">Terms & Condition</a>
+            <a  class="hover-link" href="#">Security Information</a>
+            <a  class="hover-link" href="https://github.com/abhishek20020"><i class="fa-brands fa-github"></i></a>
+            <a  class="hover-link" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a  class="hover-link" href="https://www.linkedin.com/in/abhishek-kumar-82926422a/"><i class="fa-brands fa-linkedin"></i></a>
+            <a  class="hover-link" href="#"><i class="fa-brands fa-youtube"></i></a>
+        
+        </div>
+    </div>
+    <div style="background-color: rgb(27, 28, 31);height:50px">
+        <marquee behavior="" direction="">
+            <p style="color: whitesmoke; font-size:1.5rem;font-weight:500;padding:10px">All rights are reserved &copy; Abhishek Kumar 2023</p>
+        </marquee>
+        
+    </div>
+
+    <div class="spacer" style="height: 10vh;"></div>
+
+    <script src="https://kit.fontawesome.com/f155b6ca94.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
